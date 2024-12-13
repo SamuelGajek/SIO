@@ -1,0 +1,162 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	padding:30px;
+	box-sizing:border-box;
+}
+
+
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+/*Le code en dessous permet de personnaliser le fond du site. Ici, d'avoir le fond animé avec les carrés.*/
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #4e54c8;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 14%;
+    width: 131px;
+    height: 131px;
+    bottom: -131px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 30%;
+    width: 160px;
+    height: 160px;
+    bottom: -160px;
+    animation-delay: 1s;
+}
+.background li:nth-child(2) {
+    left: 79%;
+    width: 175px;
+    height: 175px;
+    bottom: -175px;
+    animation-delay: 5s;
+}
+.background li:nth-child(3) {
+    left: 65%;
+    width: 156px;
+    height: 156px;
+    bottom: -156px;
+    animation-delay: 12s;
+}
+.background li:nth-child(4) {
+    left: 1%;
+    width: 189px;
+    height: 189px;
+    bottom: -189px;
+    animation-delay: 4s;
+}
+.background li:nth-child(5) {
+    left: 55%;
+    width: 141px;
+    height: 141px;
+    bottom: -141px;
+    animation-delay: 21s;
+}
+.background li:nth-child(6) {
+    left: 33%;
+    width: 160px;
+    height: 160px;
+    bottom: -160px;
+    animation-delay: 4s;
+}
+.background li:nth-child(7) {
+    left: 48%;
+    width: 163px;
+    height: 163px;
+    bottom: -163px;
+    animation-delay: 1s;
+}
+.background li:nth-child(8) {
+    left: 19%;
+    width: 173px;
+    height: 173px;
+    bottom: -173px;
+    animation-delay: 18s;
+}
+.background li:nth-child(9) {
+    left: 38%;
+    width: 171px;
+    height: 171px;
+    bottom: -171px;
+    animation-delay: 43s;
+}
+
+
+button{
+	-webkit-appearance: none;
+	border:0px;
+	border-radius:5px;
+	padding:10px 20px;
+}
+
+.Accueil:hover{
+    cursor:pointer;
+}
+.Documents:hover{
+    cursor:pointer;
+}
+
+.Activités:hover{
+    cursor:pointer;
+}
+
+.Veille_technologique:hover{
+    cursor:pointer;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+
+.Accueil {background-color: #360ed6;color:white} 
+.Documents {background-color: #27e012;color:white}
+.Activités {background-color: #f44336;color:#e7e7e7}
+.Veille_technologique {background-color: #f8f8f8; color: black;}
+
+body {
+    background-color: #070b5b;
+}
+/*Code au dessus permet de personnaliser les boutons du site*/
